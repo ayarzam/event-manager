@@ -120,6 +120,7 @@ const bodyParser = require('body-parser');
 const session = require('express-session');
 const passport = require('passport');
 
+if (process.env.NODE_ENV !== 'production') require('../secrets')
 
 app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname, '../public')))
