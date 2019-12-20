@@ -1,4 +1,4 @@
-const {db} = require('./models/db');
+const db = require('./models/db');
 const app = require('./server/index');
 const PORT = 3000;
 
